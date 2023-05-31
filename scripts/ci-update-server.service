@@ -1,0 +1,11 @@
+[Unit]
+Description=Github-Webhook for Upgrade docker image
+
+[Service]
+User=root
+WorkingDirectory=/root/go/bin/
+ExecStart=/root/go/bin/github-wh
+Restart=no
+
+[Install]
+WantedBy=default.target
